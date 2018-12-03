@@ -1,0 +1,6 @@
+echo "# KitchenMonitoringSystem" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mahamudhasan124/KitchenMonitoringSystem.git
+git push -u origin master
