@@ -1,0 +1,167 @@
+
+
+
+
+
+\documentclass[conference]{IEEEtran}
+
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  
+\else
+  
+\fi
+
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage{graphicx}
+
+\begin{document}
+%
+
+\title{Kitchen Monitoring System Using PIC16F877}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{
+\IEEEauthorblockN{Mahamud Hasan}
+\IEEEauthorblockA{ID: 1420453042\\
+Section: 03\\Serial: 71\\
+Email: mahamud.hasan@northsouth.edu}
+}
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+
+Kitchen is the most important and dangerous part for every home, restaurant and hostel etc. We know that most of the kitchen are not well maintained especially in hostel and restaurant. The environment of the kitchen goes down day by day from the beginning. We hear lots of accident news because of gas leakage.  The air light is very low lack of cleanness. I develop a system which all time check the temperature, light and gas if it finds any kind of fault which is bellow standard, then buzzer runs and give and alarm and we can see in the LCD monitor that why the buzzer gives an alarm. The system is designed by Microcontroller Mplab software and sensors to monitor the environment. This report presents the hardware and software implementation to present the whole system using it. The system result shows that we can make our kitchen safe and healthy and avoid accident. 
+
+\end{abstract}
+
+% no keywords
+Keyword: Temperature Monitoring, Low light, Gas leakage, PIC Microcontroller, Kitchen Monitoring
+
+
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+% no \IEEEPARstart
+The idea comes from that most of hostel kitchen are unhygienic and the kitchen condition is very low but they are not aware of it. We need such a system so they can know that the kitchen condition is going down and why is it happening they can know. Again, we can hear lots of accident and gas blast news and it harms a lot of the general people and it is happening because of carelessness and sometimes mismanagement of the materials of our kitchen. Again the temperature of the kitchen is very high most of the time and the cook does not know about it because he/she is used to it but it is bad both for him/her and ours. In that sense, I develop a system which all time check the temperature, light and gas and compare it with standard value. If the system buzzer give alarm when the value is below standard. By checking the value, we can then make our kitchen healthy both for cook and for ours also.
+
+
+\section{Product Details}
+In our system, we use 3 sensor and pickit 2 to burn code in the PIC microcontroller and other necessary products. Now I am giving the details of the most important device of the system.
+
+\hfill 
+ 
+\hfill 
+
+\subsection{PIC16F877:}
+This powerful (200 nanosecond instruction execution) yet easy-to-program (only 35 single word instructions) CMOS FLASH-based 8-bit microcontroller packs Microchip's powerful PIC® architecture into an 40- or 44-pin package and is upwards compatible with the PIC16C5X, PIC12CXXX and PIC16C7X devices.
+\includegraphics[scale=1]{pic.png}
+ 
+The PIC16F877A features 256 bytes of EEPROM data memory, self-programming, an ICD, 2 Comparators, 8 channels of 10-bit Analog-to-Digital (A/D) converter, 2 capture/compare/PWM functions, the synchronous serial port can be configured as either 3-wire Serial Peripheral Interface (SPI™) or the 2-wire Inter-Integrated Circuit (I²C™) bus and a Universal Asynchronous Receiver Transmitter (USART). All of these features make it ideal for more advanced level A/D applications in automotive, industrial, appliances and consumer applications.
+
+
+
+\subsubsection{LM35 Gas sensor: }
+
+The LM35 series are precision integrated-circuit temperature sensors, whose output voltage is 
+Linearly proportional to the Celsius(centigrade) temperature.  0.5°C accuracy guaranteeable (at +25°C). it is suitable for remote applications.
+
+
+\includegraphics[scale=1]{lm.jpg}
+
+
+
+\subsubsection{MQ2: }
+
+
+The gas sensor MQ2 suitable for detecting of LPG, i-butane, propane, methane, alcohol, Hydrogen, smoke etc. Since It is highly sensitive and gives fast response, we can take measurements as soon as possible. This sensor can be used for gas leakage detection.
+\includegraphics[scale=1]{mq2.png}
+At normal condition, sensor resistor will be high so voltage drop across the load will be low and it will be a constant.If sensor senses flammable gases, resistance of sensor will drop. That means more current will flow from load resistor.So the voltage across it increases. This output voltage increases with increase in concentration of gas in air. The sensitivity of the gas sensor can be adjusted using potentiometer.
+
+\subsubsection{LDR:: }
+
+LDRs or Light Dependent Resistors are very useful especially in light/dark sensor circuits. Normally the resistance of an LDR is very high, sometimes as high as 1000 000 ohms, but when they are illuminated with light resistance drops dramatically.
+
+\includegraphics[scale=1]{idr.png}
+
+\section{Cost of the Products}
+
+The cost list of all the product
+\includegraphics[scale=1]{cost.png}
+\section{Flow Chart}
+This is the flow chart how this system works and get the data and give the output. As a output it show on the LCD and buzzer alarm.
+\includegraphics[scale=1]{flowchart.png}
+
+\section{Block Diagram}
+
+This is the Block diagram of the system in a short view. There are power system and other components which is not included in this block diagram.
+\includegraphics[scale=1]{block.png}
+
+\section{Code}
+This is the code by which the system is burn. I am giving some screenshot of the code
+
+\includegraphics[scale=1]{s1.png}
+\includegraphics[scale=1]{s2.png}
+\includegraphics[scale=1]{s3.png}
+
+
+\section{Simulation Screenshot}
+This is simulation of the project
+\includegraphics[scale=1]{screenshot.png}
+
+\section{Conclusion}
+
+This project help all building as well as all restaurant and ensure the safety of all the house. It also helps all the big kitchen management organisation as well as big hostel.The system is working perfectly but we can develop it and add extra sensor to get lots of necessary elements and better sensor.
+% conference papers do not normally have an appendix
+
+
+% use section* for acknowledgment
+\section*{Acknowledgment}
+
+I especially want to thank Md. Atiqur Rahman Ahad sir for giving me the idea of the project and give me the channce to work on this project.
+I also want to thank all of my senior brother of my university who help to debug all the problem and our class representative whom were always to help me.
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+
+Hsien-Tang Lin" Implementing Smart Homes with Open Source Solutions" International Journal of Smart Home Vol. 7, No. 4, July, 2013.pp 289-295.
+
+Rosslin John Robles1 and Tai-hoon Kim1" Applications, Systems and Methods in Smart Home Technology: AReview" International Journal of Advanced Science and Technology Vol. 15, February, 2010.pp 37-47.
+
+Gowthami, Dr. Adiline macriga "Smart Home Monitoring and Con trolling System Using Android Phone" International Journal of Emerg-ing Technology and Advanced Engineering Website: www.ijetae.com ISSN 2250-2459, ISO 9001:2008 Certified Journal, Volume 3, Issue 11, November 2013.
+
+Saisakul Chernbumroong, Anthony S. Atkins, and Hongnian YuPer ception of Smart Home Technologies to Assist Elderly People" 4th In-ternational conference on software, Knowledge information manage and applications (SKIMA 2010)
+
+Christian Reinisch, Mario J. Kofler, Wolfgang Kastner"ThinkHome: A Smart Home as Digital Ecosystem" 4th IEEE International Confe-rence on Digital Ecosystems and Technologies (IEEE DEST 2010).
+
+\end{thebibliography}
+
+
+
+
+%that's all folks
+\end{document}
+
+
+
